@@ -12,15 +12,20 @@ public class Personas {
     public String nombre;
     public  String apellido;
     public String id;
+    public Producto objProducto;
 
     public Personas() {
     }
 
-    public Personas(String nombre, String apellido, String id) {
+    public Personas(String nombre, String apellido, String id, Producto objProducto) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.id = id;
+        this.objProducto = objProducto;
     }
+
+    
+    
 
     public String getNombre() {
         return nombre;
@@ -44,6 +49,14 @@ public class Personas {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public Producto getObjProducto() {
+        return objProducto;
+    }
+
+    public void setObjProducto(Producto objProducto) {
+        this.objProducto = objProducto;
     }
     
     
