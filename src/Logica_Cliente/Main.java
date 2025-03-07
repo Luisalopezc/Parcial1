@@ -26,7 +26,73 @@ public class Main {
         Producto objProducto ; 
         int rta, conteo;
         
-       
+         System.out.println("Digite el id del producto");
+        id_Producto = scan.nextLine();
+
+        
+        rta = HelperValidacion.ValidarVacio(id_Producto);
+
+        while (rta > 0) {
+            System.out.println("Digite el id de la persona");
+            id_Producto = scan.nextLine();
+            rta = HelperValidacion.ValidarVacio(id_Producto);
+        }
+
+        conteo = HelperValidacion.ValidarTodoSerial(id_Producto);
+
+        while (conteo != 0) {
+            System.out.println("Digite el id de la persona");
+            id_Producto = scan.nextLine();
+            conteo = HelperValidacion.ValidarTodoSerial(id_Producto);
+
+        }
+         
+         
+        
+        System.out.println("Digite el nombre del producto");
+        nombre_Producto = scan.nextLine();
+        
+        
+         rta = HelperValidacion.ValidarVacio(nombre_Producto);
+
+        while (rta > 0) {
+            System.out.println("Digite el nombre del producto");
+            nombre_Producto = scan.nextLine();
+            rta = HelperValidacion.ValidarVacio(nombre_Producto);
+        }
+
+        conteo = HelperValidacion.ValidarTodo(nombre_Producto);
+
+        while (conteo != 0) {
+            System.out.println("Digite el nombre del producto");
+            nombre_Producto = scan.nextLine();
+            conteo = HelperValidacion.ValidarTodoLetra(nombre_Producto);
+
+        }
+        
+        
+        
+        System.out.println("Digite la descripcion del producto");
+        descripcion = scan.nextLine();
+             
+        rta = HelperValidacion.ValidarVacio(descripcion);
+
+        while (rta > 0) {
+            System.out.println("Digite la descripcion del producto");
+            descripcion = scan.nextLine();
+            rta = HelperValidacion.ValidarVacio(descripcion);
+        }
+
+        conteo = HelperValidacion.ValidarTodo(descripcion);
+
+        while (conteo != 0) {
+            System.out.println("Digite la descripcion del producto");
+            descripcion = scan.nextLine();
+            conteo = HelperValidacion.ValidarTodo(descripcion);
+
+        }
+
+        objProducto = new Producto(id_Producto, nombre_Producto, descripcion);
         
         System.out.println("Digite el nombre de la persona");
         nombre_Persona = scan.nextLine();
@@ -97,74 +163,9 @@ public class Main {
         
         
         
+         objPersonas = new Personas(nombre_Persona, apellido, id_Persona, objProducto);
          
-         
-          System.out.println("Digite el id del producto");
-        id_Producto = scan.nextLine();
-
-        
-        rta = HelperValidacion.ValidarVacio(id_Producto);
-
-        while (rta > 0) {
-            System.out.println("Digite el id de la persona");
-            id_Producto = scan.nextLine();
-            rta = HelperValidacion.ValidarVacio(id_Producto);
-        }
-
-        conteo = HelperValidacion.ValidarTodoSerial(id_Producto);
-
-        while (conteo != 0) {
-            System.out.println("Digite el id de la persona");
-            id_Producto = scan.nextLine();
-            conteo = HelperValidacion.ValidarTodoSerial(id_Producto);
-
-        }
-         
-         
-        
-        System.out.println("Digite el nombre del producto");
-        nombre_Producto = scan.nextLine();
-        
-        
-         rta = HelperValidacion.ValidarVacio(nombre_Producto);
-
-        while (rta > 0) {
-            System.out.println("Digite el nombre del producto");
-            nombre_Producto = scan.nextLine();
-            rta = HelperValidacion.ValidarVacio(nombre_Producto);
-        }
-
-        conteo = HelperValidacion.ValidarTodo(nombre_Producto);
-
-        while (conteo != 0) {
-            System.out.println("Digite el nombre del producto");
-            nombre_Producto = scan.nextLine();
-            conteo = HelperValidacion.ValidarTodoLetra(nombre_Producto);
-
-        }
-        
-        
-        
-        System.out.println("Digite la descripcion del producto");
-        descripcion = scan.nextLine();
-             
-        rta = HelperValidacion.ValidarVacio(descripcion);
-
-        while (rta > 0) {
-            System.out.println("Digite la descripcion del producto");
-            descripcion = scan.nextLine();
-            rta = HelperValidacion.ValidarVacio(descripcion);
-        }
-
-        conteo = HelperValidacion.ValidarTodo(descripcion);
-
-        while (conteo != 0) {
-            System.out.println("Digite la descripcion del producto");
-            descripcion = scan.nextLine();
-            conteo = HelperValidacion.ValidarTodo(descripcion);
-
-        }
-
+         Helpers.HelperImpresion.Imprimir(objProducto);
         
         
     }
