@@ -11,21 +11,18 @@ package Logica_Negocio;
 public class Personas {
     public String nombre;
     public  String apellido;
-    public String id;
+    public String id_Persona;
     public Producto objProducto;
 
     public Personas() {
     }
 
-    public Personas(String nombre, String apellido, String id, Producto objProducto) {
+    public Personas(String nombre, String apellido, String id_Persona, Producto objProducto) {
         this.nombre = nombre;
         this.apellido = apellido;
-        this.id = id;
+        this.id_Persona = id_Persona;
         this.objProducto = objProducto;
     }
-
-    
-    
 
     public String getNombre() {
         return nombre;
@@ -43,12 +40,12 @@ public class Personas {
         this.apellido = apellido;
     }
 
-    public String getId() {
-        return id;
+    public String getId_Persona() {
+        return id_Persona;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setId_Persona(String id_Persona) {
+        this.id_Persona = id_Persona;
     }
 
     public Producto getObjProducto() {
@@ -58,6 +55,7 @@ public class Personas {
     public void setObjProducto(Producto objProducto) {
         this.objProducto = objProducto;
     }
+
     
     
 }

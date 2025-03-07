@@ -10,17 +10,23 @@ package Logica_Negocio;
  */
 public class Producto {
     
-    public String id, nombre, descripción;
-    
-    public Producto () {
-        
-    }
-    public String getId() {
-        return id;
+    public String id_Producto, nombre, descripción;
+
+    public Producto() {
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public Producto(String id_Producto, String nombre, String descripción) {
+        this.id_Producto = id_Producto;
+        this.nombre = nombre;
+        this.descripción = descripción;
+    }
+
+    public String getId_Producto() {
+        return id_Producto;
+    }
+
+    public void setId_Producto(String id_Producto) {
+        this.id_Producto = id_Producto;
     }
 
     public String getNombre() {
@@ -39,11 +45,12 @@ public class Producto {
         this.descripción = descripción;
     }
 
-    public Producto(String id, String nombre, String descripción) {
-        this.id = id;
-        this.nombre = nombre;
-        this.descripción = descripción;
+    public String getid() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
+    
+    
+   
             
     
 }
