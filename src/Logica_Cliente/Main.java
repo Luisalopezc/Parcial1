@@ -30,20 +30,20 @@ public class Main {
         id_Producto = scan.nextLine();
 
         
-        rta = HelperValidacion.ValidarVacio(id_Producto);
+        rta = HelperValidacion.ValidarTodoLetra(id_Producto);
 
         while (rta > 0) {
-            System.out.println("Digite el id de la persona");
+            System.out.println("Digite el id del producto");
             id_Producto = scan.nextLine();
-            rta = HelperValidacion.ValidarVacio(id_Producto);
+            rta = HelperValidacion.ValidarTodoLetra(id_Producto);
         }
 
-        conteo = HelperValidacion.ValidarTodoSerial(id_Producto);
+        conteo = HelperValidacion.ValidarTodoLetra(id_Producto);
 
         while (conteo != 0) {
-            System.out.println("Digite el id de la persona");
+            System.out.println("Digite el id del producto");
             id_Producto = scan.nextLine();
-            conteo = HelperValidacion.ValidarTodoSerial(id_Producto);
+            conteo = HelperValidacion.ValidarTodoLetra(id_Producto);
 
         }
          
@@ -106,12 +106,12 @@ public class Main {
             rta = HelperValidacion.ValidarVacio(nombre_Persona);
         }
 
-        conteo = HelperValidacion.ValidarTodo(nombre_Persona);
+        conteo = HelperValidacion.ValidarTodoSerial(nombre_Persona);
 
         while (conteo != 0) {
             System.out.println("Digite el nombre de la persona");
             nombre_Persona = scan.nextLine();
-            conteo = HelperValidacion.ValidarTodoLetra(nombre_Persona);
+            conteo = HelperValidacion.ValidarTodoSerial(nombre_Persona);
 
         }
         
@@ -144,20 +144,20 @@ public class Main {
         id_Persona = scan.nextLine();
 
         
-        rta = HelperValidacion.ValidarVacio(id_Persona);
+        rta = HelperValidacion.ValidarTodoLetra(id_Persona);
 
         while (rta > 0) {
             System.out.println("Digite el id de la persona");
             id_Persona = scan.nextLine();
-            rta = HelperValidacion.ValidarVacio(id_Persona);
+            rta = HelperValidacion.ValidarTodoLetra(id_Persona);
         }
 
-        conteo = HelperValidacion.ValidarTodoSerial(id_Persona);
+        conteo = HelperValidacion.ValidarTodoLetra(id_Persona);
 
         while (conteo != 0) {
             System.out.println("Digite el id de la persona");
             id_Persona = scan.nextLine();
-            conteo = HelperValidacion.ValidarTodoSerial(id_Persona);
+            conteo = HelperValidacion.ValidarTodoLetra(id_Persona);
 
         }
         
