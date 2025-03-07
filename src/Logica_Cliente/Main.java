@@ -66,7 +66,7 @@ public class Main {
         while (conteo != 0) {
             System.out.println("Digite el nombre del producto");
             nombre_Producto = scan.nextLine();
-            conteo = HelperValidacion.ValidarTodoLetra(nombre_Producto);
+            conteo = HelperValidacion.ValidarTodo(nombre_Producto);
 
         }
         
