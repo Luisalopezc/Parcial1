@@ -165,7 +165,7 @@ public class Main {
         
          objPersonas = new Personas(nombre_Persona, apellido, id_Persona, objProducto);
          
-         Helpers.HelperImpresion.Imprimir(objProducto);
+         Helpers.HelperImpresion.Imprimir(objPersonas);
         
         
     }
