@@ -98,20 +98,20 @@ public class Main {
         nombre_Persona = scan.nextLine();
         
         
-         rta = HelperValidacion.ValidarVacio(nombre_Persona);
+         rta = HelperValidacion.ValidarTodo(nombre_Persona);
 
         while (rta > 0) {
             System.out.println("Digite el nombre de la persona");
             nombre_Persona = scan.nextLine();
-            rta = HelperValidacion.ValidarVacio(nombre_Persona);
+            rta = HelperValidacion.ValidarTodo(nombre_Persona);
         }
 
-        conteo = HelperValidacion.ValidarTodoSerial(nombre_Persona);
+        conteo = HelperValidacion.ValidarTodo(nombre_Persona);
 
         while (conteo != 0) {
             System.out.println("Digite el nombre de la persona");
             nombre_Persona = scan.nextLine();
-            conteo = HelperValidacion.ValidarTodoSerial(nombre_Persona);
+            conteo = HelperValidacion.ValidarTodo(nombre_Persona);
 
         }
         
@@ -121,12 +121,12 @@ public class Main {
         apellido = scan.nextLine();
         
         
-         rta = HelperValidacion.ValidarVacio(apellido);
+         rta = HelperValidacion.ValidarTodo(apellido);
 
         while (rta > 0) {
             System.out.println("Digite el apellido de la persona");
             apellido = scan.nextLine();
-            rta = HelperValidacion.ValidarVacio(apellido);
+            rta = HelperValidacion.ValidarTodo(apellido);
         }
 
         conteo = HelperValidacion.ValidarTodo(apellido);
